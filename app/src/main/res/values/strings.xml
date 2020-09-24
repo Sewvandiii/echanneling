@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">eChanneling</string>
+    <string name="prescription">Prescription</string>
+    <string name="prescription_upload">Prescription Upload</string>
+</resources>

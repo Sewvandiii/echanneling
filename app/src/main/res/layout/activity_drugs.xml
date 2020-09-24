@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="332dp"
+        android:layout_height="119dp"
+        android:text="User Given Drugs"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/drugs2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Username (ex:Sewvandi Promodya)"
+            android:padding="12dp"
+            android:text="Patient Name : Sewvandi Promodya Wickramasinghe"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="19dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Date"
+            android:padding="12dp"
+            android:text="Date : 21/03/2021"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="19dp"
+            android:textStyle="italic"
+            tools:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Medication"
+            android:padding="12dp"
+            android:text="Medication : Acetaminophen is used to treat mild to moderate and pain, to treat moderate to severe pain in conjunction with opiates, or to reduce fever. "
+            android:textAllCaps="false"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="19dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Usage"
+            android:padding="12dp"
+            android:text="Usage : 2 tablets per day"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="19dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Channeled by"
+            android:padding="12dp"
+            android:text="Channeled by : Dr. Pradeepa Gunasekara "
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="19dp"
+
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/signature" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemBackground="@color/botNav"
+                app:itemIconTint="@drawable/selector"
+                app:itemTextColor="@drawable/selector"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu_navigation" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

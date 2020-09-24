@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9C1A1919</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#C359DA</color>
+    <color name="colorButton">#BB3DD1</color>
+    <color name="botNav">#E83055</color>
+    <color name="grey">#3C3839</color>
+</resources>
