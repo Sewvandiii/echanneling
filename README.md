@@ -1,2 +1,2 @@
 # echanneling
-This is a echanneling website that contains channeling services.
+This is an echanneling website that contains channeling services.
