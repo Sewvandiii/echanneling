@@ -7,18 +7,18 @@
         android:icon="@drawable/home"/>
 
     <item
-        android:id="@+id/message"
-        android:title="Message"
-        android:icon="@drawable/message"/>
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/search"/>
 
     <item
-        android:id="@+id/video"
-        android:title="Video"
-        android:icon="@drawable/video"/>
+        android:id="@+id/add"
+        android:title="Add"
+        android:icon="@drawable/add"/>
 
     <item
-        android:id="@+id/notifications"
-        android:title="Notifications"
-        android:icon="@drawable/notifications"/>
+        android:id="@+id/user"
+        android:title="User"
+        android:icon="@drawable/user"/>
 
 </menu>

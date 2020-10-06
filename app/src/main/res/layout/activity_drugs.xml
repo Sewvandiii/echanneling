@@ -4,157 +4,332 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Payment">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/image"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:layout_width="332dp"
-        android:layout_height="119dp"
-        android:text="User Given Drugs"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="46sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="38dp" />
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Drugs">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="bottom"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginStart="220dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="30dp"
-            app:srcCompat="@drawable/drugs2" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Username (ex:Sewvandi Promodya)"
-            android:padding="12dp"
-            android:text="Patient Name : Sewvandi Promodya Wickramasinghe"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="19dp"
-            android:textStyle="italic" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Date"
-            android:padding="12dp"
-            android:text="Date : 21/03/2021"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="19dp"
-            android:textStyle="italic"
-            tools:visibility="visible" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Medication"
-            android:padding="12dp"
-            android:text="Medication : Acetaminophen is used to treat mild to moderate and pain, to treat moderate to severe pain in conjunction with opiates, or to reduce fever. "
-            android:textAllCaps="false"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="19dp"
-            android:textStyle="italic" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Usage"
-            android:padding="12dp"
-            android:text="Usage : 2 tablets per day"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="19dp"
-            android:textStyle="italic" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="15dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Channeled by"
-            android:padding="12dp"
-            android:text="Channeled by : Dr. Pradeepa Gunasekara "
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="19dp"
-
-            android:textStyle="bold|italic" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="15dp"
-            app:srcCompat="@drawable/signature" />
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            tools:ignore="MissingConstraints">
 
 
+            <TextView
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="To Take"
+                android:textAlignment="textStart"
+                android:textColor="#4A4A4A"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="40dp" />
 
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/newback"/>
 
         </RelativeLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Patient Name"
+            android:textColor="#4A4A4A"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif-thin"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:text="Ms. Sewvandi Wickramasinghe"
+            android:textColor="#4A4A4A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Date"
+            android:textColor="#4A4A4A"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="27 / 03 / 2020"
+            android:drawableStart="@drawable/ic_baseline_today_24"
+            android:drawablePadding="10dp"
+            android:textColor="#4A4A4A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:columnCount="1"
+            android:rowCount="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="@drawable/cerclebackground"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtmedlab2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="sans-serif-thin"
+                            android:text="Loratadine, 10 mg"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#4A4A4A"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/pills"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtmedlab2"
+                            android:layout_marginLeft="30dp"
+                            android:fontFamily="sans-serif-thin"
+                            android:text="1 pill once per day"
+                            android:textColor="@color/design_default_color_on_secondary"
+                            android:textSize="20sp"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pills"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableStart="@drawable/ic_baseline_access_time_24"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="sans-serif-thin"
+                            android:text="9.30 AM"
+                            android:textColor="#4A4A4A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/pills">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="@drawable/cerclebackground"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtmedlab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="sans-serif-thin"
+                            android:text="Esberitox, 3.2 mg"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#4A4A4A"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/tablets"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtmedlab"
+                            android:layout_marginLeft="30dp"
+                            android:fontFamily="sans-serif-thin"
+                            android:text="3 pill once per day"
+                            android:textColor="@color/design_default_color_on_secondary"
+                            android:textSize="20sp"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tablets"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableStart="@drawable/ic_baseline_access_time_24"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="sans-serif-thin"
+                            android:text="16.00 PM"
+                            android:textColor="#4A4A4A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tablets">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Channeled by"
+            android:textColor="#4A4A4A"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif-thin"
+            android:drawableStart="@drawable/ic_baseline_create_24"
+            android:drawablePadding="10dp"
+            android:text="Dr. Pradeep Gunawardhana"
+            android:textColor="#4A4A4A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif-thin"
+
+            android:text="MD [LUMUMBA] RUSSIA(1967)"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints" />
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:itemBackground="@color/botNav"
+                android:layout_alignParentBottom="true"
+                app:itemBackground="@color/colorPrimaryDark"
                 app:itemIconTint="@drawable/selector"
                 app:itemTextColor="@drawable/selector"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/menu_navigation" />
         </RelativeLayout>
 
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,11 +3,11 @@
 
     <item
         android:state_selected="true"
-        android:color="@color/design_default_color_error"/>
+        android:color="#009EFD"/>
 
     <item
         android:state_selected="false"
-        android:color="@color/cardview_light_background"/>
+        android:color="@color/colorPrimary"/>
 
 
 </selector>

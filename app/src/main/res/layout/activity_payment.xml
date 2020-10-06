@@ -4,194 +4,266 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".Payment">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/image"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:layout_width="332dp"
-        android:layout_height="119dp"
-        android:text="Payment Information"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="46sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="38dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="bottom"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="0dp">
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginStart="300dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="60dp"
-            app:srcCompat="@drawable/payment" />
+        >
 
-        <EditText
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="Username"
-            android:padding="15dp"
-            android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="Mobile"
-            android:padding="15dp"
-            android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
+            android:background="@color/colorPrimaryDark"
+            tools:ignore="MissingConstraints">
 
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="Name of the drug"
-            android:padding="15dp"
-            android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="Card Number"
-            android:padding="15dp"
-            android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="Expires"
-            android:padding="15dp"
-            android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="CVV"
-            android:padding="15dp"
-            android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="35dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginBottom="30dp"
-                android:background="@drawable/custom_button"
-                android:hint="SUBMIT"
-                android:padding="20dp"
-                android:shadowColor="@color/colorAccent"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
-                android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="@color/colorPrimaryDark"
-                android:textSize="15dp"
-                android:textStyle="bold" />
+                android:fontFamily="sans-serif-medium"
+                android:text="Payment"
+                android:textAlignment="textStart"
+                android:textColor="#4A4A4A"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="40dp" />
+            <TextView
+                android:layout_below="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="30dp"
+
+                android:fontFamily="sans-serif-medium"
+                android:text="Methods"
+                android:textAlignment="textStart"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/newback"/>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/cerclebackground"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/imgvisa"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:clickable="true"
+                        android:src="@drawable/visa"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="VISA"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_rowWeight="1"
+                android:layout_marginRight="20dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/cerclebackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgmastercard"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/mastercard"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="MASTER CARD"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
- </RelativeLayout>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/cerclebackground"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/imgamerican"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/americanexpress"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="AMERICAN EXPRESS"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_rowWeight="1"
+                android:layout_marginRight="20dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/cerclebackground"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgpaypal"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/paypal"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="PAYPAL"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:itemBackground="@color/botNav"
+                android:layout_alignParentBottom="true"
+                app:itemBackground="@color/colorPrimaryDark"
                 app:itemIconTint="@drawable/selector"
                 app:itemTextColor="@drawable/selector"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/menu_navigation" />
         </RelativeLayout>
 
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

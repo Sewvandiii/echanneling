@@ -2,28 +2,63 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".LabTest">
 
-    <ImageView
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/image"
-        android:scaleType="centerCrop"/>
-    <TextView
-        android:layout_width="332dp"
-        android:layout_height="119dp"
-        android:text="Lab Test Upload"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="46sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
 
+        <TextView
+            android:id="@+id/lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Lab Test"
+            android:textAlignment="textStart"
+            android:textColor="#4A4A4A"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="40dp" />
+        <TextView
+            android:layout_below="@+id/lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Details"
+            android:textAlignment="textStart"
+            android:textColor="#4A4A4A"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="40dp" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/newback" />
+
+
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,14 +67,7 @@
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginStart="220dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="60dp"
-            app:srcCompat="@drawable/labtest" />
+
 
 
         <EditText
@@ -48,55 +76,40 @@
             android:layout_centerHorizontal="true"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="Username"
+            android:hint="Patient Name"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="10dp"
+            android:background="@drawable/custom_input"
+            android:layout_marginBottom="25dp"
             android:hint="Your Area"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+            android:drawablePadding="10dp"
             android:hint="Laboratory Name"
+            android:layout_marginBottom="25dp"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
 
 
         <EditText
@@ -104,36 +117,26 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:drawablePadding="10dp"
             android:hint="Mobile"
+            android:layout_marginBottom="25dp"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_assignment_24"
+            android:drawablePadding="10dp"
             android:hint="Details of the Lab Test"
             android:padding="15dp"
+            android:layout_marginBottom="27dp"
             android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
 
 
         <RelativeLayout
@@ -144,13 +147,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/custom_button"
-                android:hint="UPLOAD THE LAB TEST"
+                android:hint="SUBMIT"
                 android:padding="20dp"
-                android:shadowColor="@color/colorAccent"
+                android:shadowColor="@color/botNav"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
                 android:textColor="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
@@ -161,14 +164,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="59dp">
-
+            android:layout_height="wrap_content">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:itemBackground="@color/botNav"
+                app:itemBackground="@color/colorPrimaryDark"
                 app:itemIconTint="@drawable/selector"
                 app:itemTextColor="@drawable/selector"
                 app:labelVisibilityMode="labeled"

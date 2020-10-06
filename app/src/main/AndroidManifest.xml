@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.echanneling">
 
     <application
@@ -9,11 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Drugs"></activity>
-        <activity android:name=".Purchase" />
-        <activity android:name=".Payment" />
+        <activity android:name=".MedLab"></activity>
         <activity android:name=".LabTest" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Purchase4" />
+        <activity android:name=".Purchase3" />
+        <activity android:name=".Purchase2" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Drugs" />
+        <activity android:name=".Purchase" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

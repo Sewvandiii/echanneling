@@ -2,26 +2,39 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Payment">
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Purchase">
 
-    <ImageView
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/image"
-        android:scaleType="centerCrop"/>
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:layout_width="332dp"
-        android:layout_height="119dp"
-        android:text="Purchase Details"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="46sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="38dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/visa"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="30dp"
+           />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/newback" />
+
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,125 +43,98 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="0dp">
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginStart="225dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="25dp"
-            app:srcCompat="@drawable/purchase" />
 
-        <TextView
+
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Username (ex:Sewvandi Promodya)"
-            android:padding="15dp"
-            android:text="Username : Sewvandi Promodya Wickramasinghe"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="18dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Mobile (ex:0703226988)"
-            android:padding="15dp"
-            android:text="Mobile : 0703226988"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="18dp"
-            tools:visibility="visible" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Name of the drug"
-            android:padding="15dp"
-            android:text="Name of the drug : Acetaminophen "
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="18dp" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:fontFamily="sans-serif-medium"
             android:hint="Card Number"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_credit_card_24"
+            android:drawablePadding="10dp"
             android:padding="15dp"
-            android:text="Card No : 2093 4783 9328 7294"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="18dp" />
+            android:textColorHint="@color/colorPrimary" />
 
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:fontFamily="sans-serif-medium"
-            android:hint="Expires"
+            android:drawableStart="@drawable/ic_baseline_card_membership_24"
+            android:drawablePadding="10dp"
+            android:background="@drawable/custom_input"
+            android:layout_marginBottom="20dp"
+            android:hint="Card Holder"
             android:padding="15dp"
-            android:text="Expires : 02/23"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="18dp" />
+            android:textColorHint="@color/colorPrimary" />
 
-        <TextView
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+            android:drawablePadding="10dp"
+            android:hint="Exp Date"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_confirmation_number_24"
+            android:drawablePadding="10dp"
             android:hint="CVV"
+            android:layout_marginBottom="20dp"
             android:padding="15dp"
-            android:text="CVV : 456"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/colorPrimary"
-            android:textSize="18dp" />
+            android:textColorHint="@color/colorPrimary" />
 
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Save your card details"
+            android:textColor="@color/grey" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <Button
+                android:onClick="ShowPopup"
+                android:id="@+id/btnpaynow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/custom_button"
-                android:hint="PURCHASE"
+                android:hint="PAY NOW"
                 android:padding="20dp"
-                android:shadowColor="@color/colorAccent"
+                android:shadowColor="@color/botNav"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
                 android:textColor="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:textSize="15dp"
-                android:textStyle="bold" />
-
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
 
         </RelativeLayout>
 
@@ -160,15 +146,15 @@
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:itemBackground="@color/botNav"
+                app:itemBackground="@color/colorPrimaryDark"
                 app:itemIconTint="@drawable/selector"
                 app:itemTextColor="@drawable/selector"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/menu_navigation" />
         </RelativeLayout>
 
-
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

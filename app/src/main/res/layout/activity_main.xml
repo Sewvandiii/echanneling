@@ -5,56 +5,69 @@
     android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/image"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="0dp" />
 
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:text="Prescription Upload"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="46sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Prescription"
+            android:textAlignment="textStart"
+            android:textColor="#4A4A4A"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="40dp" />
+        <TextView
+            android:layout_below="@+id/pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="30dp"
+
+            android:fontFamily="sans-serif-medium"
+            android:text="Details"
+            android:textAlignment="textStart"
+            android:textColor="#4A4A4A"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/newback" />
+
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-33dp">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="320dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/back"
-            tools:ignore="VectorDrawableCompat" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginStart="220dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="60dp"
-            app:srcCompat="@drawable/prescription" />
 
         <EditText
             android:layout_width="match_parent"
@@ -62,92 +75,67 @@
             android:layout_centerHorizontal="true"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="Username"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="Patient Name"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="10dp"
             android:hint="Your Area"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_local_pharmacy_24"
+            android:drawablePadding="10dp"
             android:hint="Pharmacy Name"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:drawablePadding="10dp"
             android:hint="Mobile"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_assignment_24"
+            android:drawablePadding="10dp"
             android:hint="Details of the prescription"
             android:padding="15dp"
             android:textColorHint="@color/colorPrimary" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="4dp"
-            android:background="#494949"></RelativeLayout>
 
 
         <RelativeLayout
@@ -155,16 +143,17 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:id="@+id/btnprescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/custom_button"
-                android:hint="UPLOAD THE PRESCRIPTION"
+                android:hint="SUBMIT"
                 android:padding="20dp"
-                android:shadowColor="@color/colorAccent"
+                android:shadowColor="@color/botNav"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
                 android:textColor="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
@@ -181,7 +170,7 @@
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:itemBackground="@color/botNav"
+                app:itemBackground="@color/colorPrimaryDark"
                 app:itemIconTint="@drawable/selector"
                 app:itemTextColor="@drawable/selector"
                 app:labelVisibilityMode="labeled"
@@ -189,7 +178,6 @@
         </RelativeLayout>
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
