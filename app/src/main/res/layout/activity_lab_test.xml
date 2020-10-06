@@ -71,6 +71,7 @@
 
 
         <EditText
+            android:id="@+id/txtname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -85,6 +86,7 @@
             android:textColorHint="@color/colorPrimary" />
 
         <EditText
+            android:id="@+id/txtareaa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -99,6 +101,7 @@
 
 
         <EditText
+            android:id="@+id/txtlname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -113,6 +116,7 @@
 
 
         <EditText
+            android:id="@+id/txtmobilee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -126,6 +130,7 @@
             android:textColorHint="@color/colorPrimary" />
 
         <EditText
+            android:id="@+id/txtdetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -143,7 +148,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
             <Button
+                android:id="@+id/submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"

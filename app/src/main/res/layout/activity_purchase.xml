@@ -47,6 +47,7 @@
 
 
         <EditText
+            android:id="@+id/cardno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -61,6 +62,7 @@
             android:textColorHint="@color/colorPrimary" />
 
         <EditText
+            android:id="@+id/cardholder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -75,6 +77,7 @@
 
 
         <EditText
+            android:id="@+id/expdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -89,6 +92,7 @@
 
 
         <EditText
+            android:id="@+id/cvv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"

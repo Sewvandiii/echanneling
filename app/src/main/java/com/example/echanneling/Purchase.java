@@ -8,50 +8,68 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 
 public class Purchase extends AppCompatActivity {
 
-    Dialog dialog1;
+    EditText text1, text2, text3, text4;
     ImageView imgback;
+
+    Button btn;
+
+    AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase);
 
-        dialog1 = new Dialog(this);
+        btn = findViewById(R.id.btnpaynow);
 
         imgback = (ImageView) findViewById(R.id.imageView);
+
+        text1 = findViewById(R.id.cardno);
+        text2 = findViewById(R.id.cardholder);
+        text3 = findViewById(R.id.expdate);
+        text4 = findViewById(R.id.cvv);
+
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation.addValidation(this, R.id.cardno, RegexTemplate.NOT_EMPTY, R.string.invalid_cardno);
+        awesomeValidation.addValidation(this, R.id.cardholder, RegexTemplate.NOT_EMPTY, R.string.invalid_cardholder);
+        awesomeValidation.addValidation(this, R.id.expdate, RegexTemplate.NOT_EMPTY, R.string.invalid_expdate);
+        awesomeValidation.addValidation(this, R.id.cvv, RegexTemplate.NOT_EMPTY, R.string.invalid_cvv);
+
+
         imgback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Purchase.this,Payment.class);
+                Intent intent = new Intent(Purchase.this, Payment.class);
                 startActivity(intent);
+
             }
         });
-    }
-
-    public void ShowPopup(View v) {
-        TextView txtclose;
 
 
-        dialog1.setContentView(R.layout.popup);
-
-        txtclose = (TextView) dialog1.findViewById(R.id.txtclose);
-
-        txtclose.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dialog1.dismiss();
+                if (awesomeValidation.validate()) {
+                    Toast.makeText(getApplicationContext(), "Details added successfully!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Details added Failed!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
-        dialog1.show();
-        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-
     }
-
 }
+
