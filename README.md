@@ -16,7 +16,7 @@ For the implementation, technology used is Java as the programming language and 
 
 One dependancy is required to run the project.
 
-#### Add these Dependencies in the build.gradle file of the project )
+#### Add these Dependencies in the build.gradle file of the project
 
 implementation 'com.basgeekball:awesome-validation:4.2'
 
