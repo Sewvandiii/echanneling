@@ -1,6 +1,6 @@
 # 💊 eChanneling
 
-This is my individual part of the [eChanneling](https://play.google.com/store/apps/details?id=com.echannelling.mobilechannelling)  mobile application UI / UX improvement and development project for User Experience Engineering module - 3rd year 2nd Semester where you have to select already existing mobile application (From Google PlayStore or anywhere) and improve the UI/UX of the mobile application.<br> 
+This is my individual part of the [eChanneling](https://play.google.com/store/apps/details?id=com.echannelling.mobilechannelling)  mobile application UI / UX improvement and development project for User Experience Engineering module - 3rd year 2nd Semester where we have to select already existing mobile application (From Google PlayStore or anywhere) and improve the UI/UX of the mobile application.<br> 
 
 So we have choose eChanneling mobile application, where I implemented:<br>
 
@@ -26,7 +26,9 @@ implementation 'com.basgeekball:awesome-validation:4.2'
 
 ## Documentation
 
-[Sketches, Wireframes and Paper prototypes](https://drive.google.com/file/d/10scKehO0T05BTV0K63y9wYP1yFJwkK6p/view?usp=sharing)
+Sketches, Wireframes and Paper prototypes [click here](https://drive.google.com/file/d/10scKehO0T05BTV0K63y9wYP1yFJwkK6p/view?usp=sharing)
+
+UAT video evidence [click here](https://drive.google.com/file/d/1-XDkpq2Ai7ynnyAfTij5xa12ya34Wot5/view?usp=sharing)
 
 <img src="https://user-images.githubusercontent.com/61576355/95675978-9e344800-0bd8-11eb-8ab7-8de327e38589.jpg"  height="400px">
 
