@@ -8,7 +8,7 @@ So we have choose eChanneling mobile application, where I implemented:<br>
 - Purchasing the patient's drugs by selecting a preferred payment method.<br>
 - Viewing the user given drug details.<br>
 
-Main focus of the project development is to improve user Experience by re-organization of the UI components and elements as convenient to the end-user as possible and changes to the color-schema.<br>
+Main focus of the project development is to improve User Experience by re-organization of the UI components and elements as convenient to the end-user as possible and we have made changes to the color-schema accordingly. Also, we try to balance the white spaces in the interface and the organization of the elements such that you have clean looking interfaces with easy understandability and with more user-friendliness.<br>
 
 For the implementation, technology used is Java as the programming language and Android Studio as the IDE.
 
