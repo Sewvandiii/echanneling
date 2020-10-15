@@ -1,5 +1,7 @@
 # 💊 eChanneling
 
+![Java](https://img.shields.io/badge/Language-Java-red)
+
 This is my individual part of the [eChanneling](https://play.google.com/store/apps/details?id=com.echannelling.mobilechannelling)  mobile application UI / UX improvement and development project for User Experience Engineering module - 3rd year 2nd Semester where we have to select already existing mobile application (From Google PlayStore or anywhere) and improve the UI/UX of the mobile application.<br> 
 
 So we have choose eChanneling mobile application, where I implemented:<br>
@@ -12,7 +14,7 @@ Main focus of the project development is to improve User Experience by re-organi
 
 For the implementation, technology used is Java as the programming language and Android Studio as the IDE.
 
-## important 🤔
+## ⚠ important
 
 One dependancy is required to run the project.
 
@@ -20,7 +22,7 @@ One dependancy is required to run the project.
 
 implementation 'com.basgeekball:awesome-validation:4.2'
 
-## Fixed UI 😁
+## 😁 Fixed UI
 
 ![UI](https://user-images.githubusercontent.com/61576355/95424439-425f8a00-0960-11eb-9523-620ceebe8e16.png)
 
