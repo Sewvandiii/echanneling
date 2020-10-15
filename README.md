@@ -1,5 +1,7 @@
 # 💊 eChanneling
 
+## Languages
+
 ![Java](https://img.shields.io/badge/Language-Java-red)
 
 This is my individual part of the [eChanneling](https://play.google.com/store/apps/details?id=com.echannelling.mobilechannelling)  mobile application UI / UX improvement and development project for User Experience Engineering module - 3rd year 2nd Semester where we have to select already existing mobile application (From Google PlayStore or anywhere) and improve the UI/UX of the mobile application.<br> 
